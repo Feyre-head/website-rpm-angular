@@ -1,4 +1,4 @@
-import { caseStudies } from '@/assets/data';
+import { cobertura } from '@/assets/data';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -11,8 +11,8 @@ import { RouterLink } from '@angular/router';
     templateUrl: './home1-case-studies.component.html',
     styles: ``
 })
-export class Home1CaseStudiesComponent {
-    caseStudySlides = caseStudies
+export class Home1CoberturaComponent {
+    caseStudySlides = cobertura
 
     sliderOptions = {
         loop: true,

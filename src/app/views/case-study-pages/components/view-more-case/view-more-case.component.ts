@@ -1,4 +1,4 @@
-import  { caseStudies } from '@/assets/data';
+import  { cobertura } from '@/assets/data';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CaseStudyCardComponent } from "@app/components/cards/case-study-card/case-study-card.component";
@@ -10,5 +10,5 @@ import { CaseStudyCardComponent } from "@app/components/cards/case-study-card/ca
     styles: ``
 })
 export class ViewMoreCaseComponent {
-    caseStudies = caseStudies
+    cobertura = cobertura
 }

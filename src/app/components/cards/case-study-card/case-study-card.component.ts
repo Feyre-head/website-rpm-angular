@@ -1,4 +1,4 @@
-import type { CaseStudyType } from '@/types';
+import type { CoberturaType } from '@/types';
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
@@ -9,5 +9,5 @@ import { RouterLink } from '@angular/router';
   styles: ``
 })
 export class CaseStudyCardComponent {
-@Input() case!:CaseStudyType
+@Input() case!:CoberturaType
 }

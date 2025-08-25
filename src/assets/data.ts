@@ -1,4 +1,4 @@
-import type { BlogType, CaseStudyType, ServiceType, TestimonialType } from "@/types";
+import type { BlogType, CoberturaType, ServiceType, TestimonialType } from "@/types";
 
 export const services: ServiceType[] = [
     {
@@ -58,7 +58,7 @@ export const services: ServiceType[] = [
 ];
 
 
-export const caseStudies: CaseStudyType[] = [
+export const cobertura: CoberturaType[] = [
     {
         image: 'assets/img/all-images/case/case-img1.png',
         tag: '#CloudFlex Solution',

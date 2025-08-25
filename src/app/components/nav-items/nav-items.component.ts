@@ -24,7 +24,7 @@ export class NavItemsComponent {
                 { title: 'Eitech - Homepage 01', link: '/home-1', singleLink: "/single-home-1", image: 'assets/img/all-images/demo/demo-img1.png' },
                 { title: 'Eitech - Homepage 02', link: '/home-2', singleLink: "/single-home-2", image: 'assets/img/all-images/demo/demo-img2.png' },
                 { title: 'Eitech - Homepage 03', link: '/home-3', singleLink: "/single-home-3", image: 'assets/img/all-images/demo/demo-img3.png' },
-                { title: 'Eitech - Homepage 04', link: '/home-4', singleLink: "/single-home-4", image: 'assets/img/all-images/demo/demo-img4.png' },
+                { title: 'Eitech - Homepage 04', link: '/home-4', singleLink: "/rpm-telecom", image: 'assets/img/all-images/demo/demo-img4.png' },
                 { title: 'Eitech - Homepage 05', link: '/home-5', singleLink: "/single-home-5", image: 'assets/img/all-images/demo/demo-img5.png' },
             ],
         },

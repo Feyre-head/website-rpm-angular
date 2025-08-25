@@ -5,9 +5,11 @@ import { Component } from '@angular/core';
 import { CarouselModule, type OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-    selector: 'app-home4-case-studies',
-    imports: [CarouselModule, CommonModule,GsapRevealDirective],
-    templateUrl: './home4-case-studies.component.html',
+    selector: 'app-home4-cobertura',
+    standalone: true,
+    host: { 'data-component-id': 'home4-cobertura-instance' },
+    imports: [CarouselModule, CommonModule, GsapRevealDirective],
+    templateUrl: './home4-cobertura.component.html',
     styles: ``
 })
 export class Home4CoberturaComponent {
@@ -34,7 +36,7 @@ export class Home4CoberturaComponent {
         }
     ];
 
-    customOptions:OwlOptions = {
+    customOptions: OwlOptions = {
         loop: true,
         margin: 30,
         nav: true,

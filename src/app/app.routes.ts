@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: 'single-home-4',
+        redirectTo: 'rpm-telecom',
         pathMatch: 'full',
     },
     {

@@ -17,7 +17,7 @@ export type ServiceType = {
     description: string;
 }
 
-export type CaseStudyType = {
+export type CoberturaType = {
     image: string,
     tag: string;
     title: string;

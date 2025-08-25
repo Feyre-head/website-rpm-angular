@@ -1,19 +1,19 @@
 import { GsapRevealDirective } from '@/core/directives/gsap-reveal.directive';
-import type { CaseStudyType } from '@/types';
+import type { CoberturaType } from '@/types';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CarouselModule, type OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-    selector: 'app-home4-case-studies',
+    selector: 'app-home4-ccobertura',
     standalone: true,
-    host: { 'data-component-id': 'home4-case-instance' },
+    host: { 'data-component-id': 'home4-cobertura-instance' },
     imports: [CarouselModule, CommonModule, GsapRevealDirective],
-    templateUrl: './home4-case-studies.component.html',
+    templateUrl: './home4-cobertura.component.html',
     styles: ``
 })
-export class Home4CaseStudiesComponent {
-    caseStudies: CaseStudyType[] = [
+export class Home4CoberturaComponent {
+    cobertura: CoberturaType[] = [
         {
             image: 'assets/img/all-images/case/case-img7.png',
             tag: '#CloudFlex Solution',

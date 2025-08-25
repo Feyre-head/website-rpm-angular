@@ -4,7 +4,7 @@ import { SingleHome4Component } from './single/single-home4/single-home4.compone
 export const HOME_PAGES_ROUTES: Routes = [
 
     {
-        path: 'single-home-4',
+        path: 'rpm-telecom',
         component: SingleHome4Component,
         data: { title: "Single Home 4" }
     },
