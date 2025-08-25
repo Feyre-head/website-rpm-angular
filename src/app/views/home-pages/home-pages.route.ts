@@ -6,7 +6,7 @@ export const HOME_PAGES_ROUTES: Routes = [
     {
         path: 'rpm-telecom',
         component: SingleHome4Component,
-        data: { title: "Single Home 4" }
+        data: { title: "" }
     },
 
 ];
