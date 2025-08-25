@@ -1,7 +1,8 @@
 import type { BeneficiosType } from '@/types';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ScrollService } from '@/core/services/scroll.service';
 
 @Component({
     selector: 'app-home4-beneficios',
@@ -12,42 +13,26 @@ import { RouterLink } from '@angular/router';
     styles: ``
 })
 export class Home4BeneficiosComponent {
+    public scroll = inject(ScrollService);
     beneficios: BeneficiosType[] = [
-        {
-            id: 1,
-            icon: 'assets/img/icons/service-icon11.svg',
-            title: 'Cyber Security Solution',
-            description: 'Our advanced cybersecurity solution designed to protect against ever- an evolving threats, approach ensures.'
-        },
+        // {
+        //     id: 1,
+        //     icon: 'assets/img/beneficios/skeelo.png',
+        //     title: 'Cyber Security Solution',
+        //     description: 'Our advanced cybersecurity solution designed to protect against ever- an evolving threats, approach ensures.'
+        // },
         {
             id: 2,
-            icon: 'assets/img/icons/service-icon12.svg',
-            title: 'Scalable Cloud Solutions',
-            description: 'Our advanced cybersecurity solution designed to protect against ever- an evolving threats, approach ensures.'
+            icon: 'assets/img/beneficios/playhub.png',
+            title: 'PlayHub',
+            description: 'Tenha acesso a apps de streaming como Disney+, HBO Max, Deezer e muito mais diretamente no seu plano.'
         },
         {
             id: 3,
-            icon: 'assets/img/icons/service-icon13.svg',
-            title: 'Data Protection Services',
-            description: 'Our advanced cybersecurity solution designed to protect against ever- an evolving threats, approach ensures.'
-        },
-        {
-            id: 4,
-            icon: 'assets/img/icons/service-icon14.svg',
-            title: 'Optimization Management',
-            description: 'Our advanced cybersecurity solution designed to protect against ever- an evolving threats, approach ensures.'
-        },
-        {
-            id: 5,
-            icon: 'assets/img/icons/service-icon15.svg',
-            title: 'HelpDesk 360 Solutions',
-            description: 'Our advanced cybersecurity solution designed to protect against ever- an evolving threats, approach ensures.'
-        },
-        {
-            id: 6,
-            icon: 'assets/img/icons/service-icon16.svg',
-            title: 'Software Development',
-            description: 'Our advanced cybersecurity solution designed to protect against ever- an evolving threats, approach ensures.'
+            icon: 'assets/img/beneficios/cdntv.png',
+            title: 'CDN TV',
+            description: 'Assista canais ao vivo e conteúdos digitais exclusivos com qualidade e estabilidade sem complicação.'
         }
+        
     ];
 }

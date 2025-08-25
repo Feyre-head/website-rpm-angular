@@ -6,15 +6,14 @@
             <div class="col-lg-12">
                 <div class="service-header space-margin60">
                     <div class="heading6">
-                        <h5><img src="assets/img/icons/sub-logo4.svg" alt="">Benefícios</h5>
+                        <h5><img src="assets/img/icons/sub-logo4.svg" alt="">Benefícios de Ser Cliente RPM</h5>
                         <div class="space18"></div>
-                        <h2 class="text-anime-style-3">Tailored IT Services For <br class="d-lg-block d-none"> Your
-                            Unique Business</h2>
+                        <h2 class="text-anime-style-3">Nossa internet vem acompanhada de benefícios pensados para<br class="d-lg-block d-none">trazer mais praticidade e diversão ao seu dia. </h2>
                     </div>
-                    <div class="btn-area1">
+                    <!-- <div class="btn-area1">
                         <a routerLink="/beneficios" class="vl-btn5"><span class="demo">View More Services</span><span
                                 class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -33,7 +32,7 @@
                         <p>{{ service.description }}</p>
                         <div class="space24"></div>
                         <div class="btn-area">
-                            <a routerLink="/" class="service-btn">Learn More</a>
+                            <a (click)="scroll.scrollTo('planos')" href="javascript:void(0)" class="service-btn">Ver Planos</a>
                         </div>
                     </div>
                 </div>

@@ -13,7 +13,7 @@ export class Home4BeneficiosComponent {
     services: BeneficiosType[] = [
         {
             id: 1,
-            icon: 'assets/img/icons/service-icon11.svg',
+            icon: 'assets/img/beneficios/skeelo.png',
             title: 'Cyber Security Solution',
             description: 'Our advanced cybersecurity solution designed to protect against ever- an evolving threats, approach ensures.'
         },
