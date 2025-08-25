@@ -1,4 +1,4 @@
-import type { PricingPlanType } from '@/types';
+import type { PlanosType } from '@/types';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
 export class Home3PricingComponent {
     isYearly = true;
 
-    plans: PricingPlanType[] = [
+    plans: PlanosType[] = [
         {
             name: 'Basic Plan',
             monthlyPrice: 49,

@@ -3,7 +3,8 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home4-about',
-   host: { 'data-component-id': 'home4-about-instance' },
+  standalone:true,
+  host: { 'data-component-id': 'home4-about-instance' },
   imports: [RouterLink],
   templateUrl: './home4-about.component.html',
   styles: ``

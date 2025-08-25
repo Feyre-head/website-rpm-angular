@@ -47,7 +47,7 @@ export type BlogType = {
     link?: string;
 }
 
-export type PricingPlanType = {
+export type PlanosType = {
     name: string;
     monthlyPrice: number;
     yearlyPrice: number;

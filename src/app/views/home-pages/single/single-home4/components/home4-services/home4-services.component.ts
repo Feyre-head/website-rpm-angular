@@ -5,8 +5,9 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-home4-services',
-     host: { 'data-component-id': 'home4-service-instance' },
-    imports: [CommonModule,RouterLink],
+    standalone: true,
+    host: { 'data-component-id': 'home4-service-instance' },
+    imports: [CommonModule, RouterLink],
     templateUrl: './home4-services.component.html',
     styles: ``
 })

@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
-        path: 'single-home-4',
+        path: '',
         redirectTo: 'single-home-4',
         pathMatch: 'full',
     },

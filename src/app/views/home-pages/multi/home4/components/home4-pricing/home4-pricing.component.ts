@@ -1,4 +1,4 @@
-import type { PricingPlanType } from '@/types';
+import type { PlanosType } from '@/types';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
     styles: ``
 })
 export class Home4PricingComponent {
-    pricingPlans: PricingPlanType[] = [
+    planos: PlanosType[] = [
         {
             name: 'Basic',
             monthlyPrice: 60,

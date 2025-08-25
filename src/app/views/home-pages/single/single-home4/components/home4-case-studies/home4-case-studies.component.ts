@@ -6,8 +6,9 @@ import { CarouselModule, type OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
     selector: 'app-home4-case-studies',
-     host: { 'data-component-id': 'home4-case-instance' },
-    imports: [CarouselModule, CommonModule,GsapRevealDirective],
+    standalone: true,
+    host: { 'data-component-id': 'home4-case-instance' },
+    imports: [CarouselModule, CommonModule, GsapRevealDirective],
     templateUrl: './home4-case-studies.component.html',
     styles: ``
 })
@@ -35,7 +36,7 @@ export class Home4CaseStudiesComponent {
         }
     ];
 
-    customOptions:OwlOptions = {
+    customOptions: OwlOptions = {
         loop: true,
         margin: 30,
         nav: true,

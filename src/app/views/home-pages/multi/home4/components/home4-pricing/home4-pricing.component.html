@@ -12,7 +12,7 @@
         </div>
         <div class="space100"></div>
         <div class="row">
-            <div class="col-lg-4 col-md-6" *ngFor="let plan of pricingPlans; let i = index"
+            <div class="col-lg-4 col-md-6" *ngFor="let plan of planos; let i = index"
                 [attr.data-aos]="i % 2 === 0 ? 'flip-right' : 'flip-left'" [attr.data-aos-duration]="800 + (i * 200)">
                 <div *ngIf="plan.isPopular" class="space100 d-lg-none d-md-none d-block"></div>
                 <div class="pricing-single-boxarea" [ngClass]="plan.isPopular ? 'box2':''">

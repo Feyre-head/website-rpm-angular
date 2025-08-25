@@ -6,8 +6,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
     selector: 'app-home4-testimonial',
-     host: { 'data-component-id': 'home4-testimonial-instance' },
-    imports: [CarouselModule, CommonModule,RouterLink],
+    standalone: true,
+    host: { 'data-component-id': 'home4-testimonial-instance' },
+    imports: [CarouselModule, CommonModule, RouterLink],
     templateUrl: './home4-testimonial.component.html',
     styles: ``
 })

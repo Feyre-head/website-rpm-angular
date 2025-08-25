@@ -1,16 +1,17 @@
-import type { PricingPlanType } from '@/types';
+import type { PlanosType } from '@/types';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-home4-pricing',
-     host: { 'data-component-id': 'home4-pricing-instance' },
+    selector: 'app-home4-planos',
+    standalone: true,
+    host: { 'data-component-id': 'home4-planos-instance' },
     imports: [CommonModule],
-    templateUrl: './home4-pricing.component.html',
+    templateUrl: './home4-planos.component.html',
     styles: ``
 })
-export class Home4PricingComponent {
-    pricingPlans: PricingPlanType[] = [
+export class Home4PlanosComponent {
+    planos: PlanosType[] = [
         {
             name: 'Basic',
             monthlyPrice: 60,
