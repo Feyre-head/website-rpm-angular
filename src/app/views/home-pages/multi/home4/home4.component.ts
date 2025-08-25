@@ -9,11 +9,11 @@ import { Home4HeroComponent } from "./components/home4-hero/home4-hero.component
 import { Home4PricingComponent } from "./components/home4-pricing/home4-pricing.component";
 import { Home4BeneficiosComponent } from "./components/home4-services/home4-services.component";
 import { Home4TestimonialComponent } from "./components/home4-testimonial/home4-testimonial.component";
-import { Home4WorkComponent } from "./components/home4-work/home4-work.component";
+import { Home4SuporteComponent } from "./components/home4-work/home4-work.component";
 
 @Component({
   selector: 'app-home4',
-  imports: [Home4HeaderComponent, Home4HeroComponent, Home4AboutComponent, Home4BeneficiosComponent, Home4WorkComponent, Home4CoberturaComponent, Home4PricingComponent, Home4TestimonialComponent, Home4BlogsComponent, Home4CtaComponent, FooterComponent],
+  imports: [Home4HeaderComponent, Home4HeroComponent, Home4AboutComponent, Home4BeneficiosComponent, Home4SuporteComponent, Home4CoberturaComponent, Home4PricingComponent, Home4TestimonialComponent, Home4BlogsComponent, Home4CtaComponent, FooterComponent],
   templateUrl: './home4.component.html',
   styles: ``
 })
