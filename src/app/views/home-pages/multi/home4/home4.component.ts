@@ -7,13 +7,13 @@ import { Home4CtaComponent } from "./components/home4-cta/home4-cta.component";
 import { Home4HeaderComponent } from "./components/home4-header/home4-header.component";
 import { Home4HeroComponent } from "./components/home4-hero/home4-hero.component";
 import { Home4PricingComponent } from "./components/home4-pricing/home4-pricing.component";
-import { Home4ServicesComponent } from "./components/home4-services/home4-services.component";
+import { Home4BeneficiosComponent } from "./components/home4-services/home4-services.component";
 import { Home4TestimonialComponent } from "./components/home4-testimonial/home4-testimonial.component";
 import { Home4WorkComponent } from "./components/home4-work/home4-work.component";
 
 @Component({
   selector: 'app-home4',
-  imports: [Home4HeaderComponent, Home4HeroComponent, Home4AboutComponent, Home4ServicesComponent, Home4WorkComponent, Home4CoberturaComponent, Home4PricingComponent, Home4TestimonialComponent, Home4BlogsComponent, Home4CtaComponent, FooterComponent],
+  imports: [Home4HeaderComponent, Home4HeroComponent, Home4AboutComponent, Home4BeneficiosComponent, Home4WorkComponent, Home4CoberturaComponent, Home4PricingComponent, Home4TestimonialComponent, Home4BlogsComponent, Home4CtaComponent, FooterComponent],
   templateUrl: './home4.component.html',
   styles: ``
 })

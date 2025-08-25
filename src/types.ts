@@ -10,7 +10,7 @@ export type MenuItem = {
     isOpen?: boolean
 }
 
-export type ServiceType = {
+export type BeneficiosType = {
     id: number;
     icon: string;
     title: string;

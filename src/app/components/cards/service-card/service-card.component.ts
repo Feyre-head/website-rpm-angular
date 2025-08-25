@@ -1,4 +1,4 @@
-import type { ServiceType } from '@/types';
+import type { BeneficiosType } from '@/types';
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
@@ -9,5 +9,5 @@ import { RouterLink } from '@angular/router';
     styles: ``
 })
 export class ServiceCardComponent {
-    @Input() service!: ServiceType
+    @Input() service!: BeneficiosType
 }

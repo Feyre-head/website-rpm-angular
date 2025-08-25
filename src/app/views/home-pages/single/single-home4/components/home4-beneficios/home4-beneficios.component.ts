@@ -1,18 +1,18 @@
-import type { ServiceType } from '@/types';
+import type { BeneficiosType } from '@/types';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-    selector: 'app-home4-services',
+    selector: 'app-home4-beneficios',
     standalone: true,
-    host: { 'data-component-id': 'home4-service-instance' },
+    host: { 'data-component-id': 'home4-beneficios-instance' },
     imports: [CommonModule, RouterLink],
-    templateUrl: './home4-services.component.html',
+    templateUrl: './home4-beneficios.component.html',
     styles: ``
 })
-export class Home4ServicesComponent {
-    services: ServiceType[] = [
+export class Home4BeneficiosComponent {
+    beneficios: BeneficiosType[] = [
         {
             id: 1,
             icon: 'assets/img/icons/service-icon11.svg',

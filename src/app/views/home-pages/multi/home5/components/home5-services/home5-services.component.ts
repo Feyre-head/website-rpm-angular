@@ -1,4 +1,4 @@
-import type { ServiceType } from '@/types';
+import type { BeneficiosType } from '@/types';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
@@ -11,7 +11,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     styles: ``
 })
 export class Home5ServicesComponent {
-    services: ServiceType[] = [
+    services: BeneficiosType[] = [
         {
             id: 1,
             title: 'Custom Edit Tool',

@@ -1,4 +1,4 @@
-import type { ServiceType } from '@/types';
+import type { BeneficiosType } from '@/types';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
@@ -9,8 +9,8 @@ import { RouterLink } from '@angular/router';
     templateUrl: './home4-services.component.html',
     styles: ``
 })
-export class Home4ServicesComponent {
-    services: ServiceType[] = [
+export class Home4BeneficiosComponent {
+    services: BeneficiosType[] = [
         {
             id: 1,
             icon: 'assets/img/icons/service-icon11.svg',

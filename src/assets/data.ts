@@ -1,6 +1,6 @@
-import type { BlogType, CoberturaType, ServiceType, TestimonialType } from "@/types";
+import type { BlogType, CoberturaType, BeneficiosType, TestimonialType } from "@/types";
 
-export const services: ServiceType[] = [
+export const services: BeneficiosType[] = [
     {
         id: 1,
         icon: 'assets/img/icons/service-icon1.svg',
