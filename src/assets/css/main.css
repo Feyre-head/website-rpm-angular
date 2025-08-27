@@ -704,7 +704,7 @@ Location:
 .heading2 h2 {
   color: var(--ztc-text-text-2);
   font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s40);
+  font-size: var(--ztc-font-size-font-s30);
   font-style: normal;
   font-weight: var(--ztc-weight-semibold);
   line-height: 48px;
@@ -936,7 +936,7 @@ Location:
 .heading6 h2 {
   color: var(--ztc-text-text-10);
   font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s40);
+  /* font-size: var(--ztc-font-size-font-s30); */
   font-style: normal;
   font-weight: var(--ztc-weight-bold);
   line-height: 48px;

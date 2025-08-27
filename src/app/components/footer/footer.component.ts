@@ -47,11 +47,9 @@ export class FooterComponent {
             ],
         },
         {
-            title: 'Documentos e Termos',
+            title: 'Documentos',
             items: [
-                { label: 'Contrato' },  
-                { label: 'Política de Privacidade' },
-                { label: 'Termos de Uso' }
+                { label: 'Contrato' },                 
                   
                 // { label: '42 9123-1900', link: 'https://wa.me/554291231900', icon: 'assets/img/icons/phn1.svg' },
                 // { label: '42 3638-1900', link: '', icon: 'assets/img/icons/phn1.svg' },
