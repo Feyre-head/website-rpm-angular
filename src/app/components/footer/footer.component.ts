@@ -29,32 +29,35 @@ export class FooterComponent {
 
     footerLinks: FooterSection[] = [
         {
-            title: 'Quick Links',
+            title: 'Links Rápidos',
             items: [
-                { label: 'About Us', link: '/pages/about' },
-                { label: 'It Solution', link: '/services' },
-                { label: 'Our Blog', link: '/blogs/one' },
-                { label: 'Pricing Plan' },
-                { label: 'Contact Us', link: '/pages/contact' },
+                { label: 'Home', link: '/' },
+                { label: 'Planos', link: '/services' },                
+                { label: 'Contato' },
+                { label: 'Onde Estamos', link: '/blogs/one' }                
             ],
         },
         {
-            title: 'Our Services',
-            items: [
-                { label: 'Cyber Security Solution' },
-                { label: 'Scalable Cloud Solutions' },
-                { label: 'Data Protection Services' },
-                { label: 'Optimization Management' },
-                { label: 'Software Development' },
+            title: 'Serviços',
+            items: [                    
+                { label: 'Central De Comunicação' },
+                { label: 'Central Do Assinante' },
+                { label: 'Teste de Velocidade' }  
+                             
             ],
         },
         {
-            title: 'Contact Us',
+            title: 'Documentos e Termos',
             items: [
-                { label: '+1 123 456 7890', link: 'tel:+11234567890', icon: 'assets/img/icons/phn1.svg' },
-                { label: '421 Allen, Mexico 4233', icon: 'assets/img/icons/location1.svg' },
-                { label: 'eitechsolution@com', link: 'mailto:eitechsolution@com', icon: 'assets/img/icons/email1.svg' },
-                { label: 'eitechsolution.com', icon: 'assets/img/icons/global1.svg' },
+                { label: 'Contrato' },  
+                { label: 'Política de Privacidade' },
+                { label: 'Termos de Uso' }
+                  
+                // { label: '42 9123-1900', link: 'https://wa.me/554291231900', icon: 'assets/img/icons/phn1.svg' },
+                // { label: '42 3638-1900', link: '', icon: 'assets/img/icons/phn1.svg' },
+                // { label: '0800 649 1900', link: '',  icon: 'assets/img/icons/phn1.svg'  },
+                // { label: 'contato@rpmtelecom', link: 'mailto:contato@rpmtelecom.com.br', icon: 'assets/img/icons/email1.svg' },
+                // { label: 'rpmtelecom.com', icon: 'assets/img/icons/global1.svg' }
             ],
         },
     ];
