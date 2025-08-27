@@ -19,7 +19,13 @@
                         <ng-template carouselSlide>
                             <div class="case-single-boxarea">
                                 <div class="img1 reveal image-anime" appGsapReveal>
-                                    <img [src]="case.image" alt="">
+
+                                    <iframe *ngIf="isMapUrl(case.image)" width="100%" height="300" style="border:0;"
+                                        allowfullscreen="" loading="lazy" [src]="getSafeMapUrl(case.image)">
+                                    </iframe>
+
+                                    <img *ngIf="!isMapUrl(case.image)" [src]="case.image" alt="{{ case.title }}">
+
                                 </div>
                                 <div class="content-area">
                                     <a href="javascript:void(0)"><span>{{ case.tag }}</span></a>
