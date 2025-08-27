@@ -39,20 +39,15 @@ export class Home4CoberturaComponent {
         }
     ];
 
-    // ✅ Injeta o DomSanitizer para segurança
+    // Injeta o DomSanitizer para segurança
     constructor(private sanitizer: DomSanitizer) { }
 
-    // ✅ Nova função para verificar se a string é uma URL de mapa
+    // verificar se a string é uma URL de mapa
     isMapUrl(url: string): boolean {
         return url.includes('google.com');
 
-          // Linhas de depuração para nos ajudar a encontrar o erro:
-        console.log('--- Verificando URL ---');
-        console.log('URL a ser checada:', url);
-        console.log('Procurando por:', this.isMapUrl);
-        console.log('Encontrou?', url); // Esta linha é a mais importante
     }
-    // ✅ Nova função para "confiar" na URL do iframe
+    // Nova função para "confiar" na URL do iframe
     getSafeMapUrl(url: string): SafeResourceUrl {
         return this.sanitizer.bypassSecurityTrustResourceUrl(url);
     }
