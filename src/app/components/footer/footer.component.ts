@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { RouterLink } from '@angular/router';
+// import { RouterLink } from '@angular/router';
 
 export type FooterItem = {
     label: string;
@@ -15,7 +15,7 @@ export type FooterSection = {
 
 @Component({
     selector: 'app-footer',
-    imports: [CommonModule,RouterLink],
+    imports: [CommonModule,],
     templateUrl: './footer.component.html',
     styles: ``
 })

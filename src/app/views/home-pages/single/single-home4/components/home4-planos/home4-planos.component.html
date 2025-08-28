@@ -11,39 +11,56 @@
             </div>
         </div>
         <div class="space100"></div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6" *ngFor="let plan of planos; let i = index"
-                [attr.data-aos]="i % 2 === 0 ? 'flip-right' : 'flip-left'" [attr.data-aos-duration]="800 + (i * 200)">
-                <div *ngIf="plan.isPopular" class="space100 d-lg-none d-md-none d-block"></div>
-                <div class="pricing-single-boxarea" [ngClass]="plan.isPopular ? 'box2':''">
-                    <div class="price">
-                        <h2>${{plan.monthlyPrice}}</h2>
-                        <div class="space14"></div>
-                        <p>Per Month</p>
-                        <img src="assets/img/elements/elements43.png" alt="">
+        <div class="row ">
+            @if (isLoading) {
+            <div class="col-12 text-center py-5">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Carregando...</span>
+                </div>
+            </div>
+            } @else if (!plans.length) {
+            <div class="col-12 text-center py-5">
+                <p>Nenhum plano disponível no momento.</p>
+            </div>
+            } @else {
+            @for (plan of plans; track plan.id; let i = $index) {
+            <div class="col-lg-3 col-md-6" [attr.data-aos]="i % 2 === 0 ? 'flip-right' : 'flip-left'"
+                [attr.data-aos-duration]="800 + (i * 200)">
+
+                <div class="pricing-single-boxarea box2">
+                    @if (plan.mostrarvalorsite && plan.valorplano) {
+                        <div class="price">
+                        <h4>R${{ plan.valorplano }}</h4>
+                        <p>Mês</p>
+                        <img class="" src="assets/img/elements/elements43.png" alt="">
                     </div>
-                    <p>{{plan.name}} Packages</p>
+                }
+                
+                    <h3 class="text-center">{{ plan.velocidade }} Mega</h3>
                     <div class="space16"></div>
-                    <h3>{{plan.name}} Plan</h3>
+                    <p class="text-center">{{ plan.planodescricao }}</p>
+
+                    <div class="space16"></div>
                     <ul>
-                        @if (plan.isPopular) {
-                        <li *ngFor="let feature of plan.features"><img src="assets/img/icons/check7.svg"
-                                alt="">{{feature}}</li>
-                        }
-                        @if (!plan.isPopular) {
-                        <li *ngFor="let feature of plan.features"><img src="assets/img/icons/check6.svg"
-                                alt="">{{feature}}</li>
-                        }
-
-
+                        <li *ngIf="plan.fibra"><img src="assets/img/icons/check6.svg" alt=""> Fibra óptica</li>
+                        <li><img src="assets/img/icons/check6.svg" alt=""> Download {{ plan.velocidade }} Mbps</li>
+                        <li><img src="assets/img/icons/check6.svg" alt=""> Upload {{ plan.velocidade }} Mbps</li>
+                        <li><img src="assets/img/icons/check6.svg" alt=""> Residencial & Empresarial</li>
                     </ul>
+
                     <div class="space32"></div>
-                    <div class="btn-area1">
-                        <a href="javascript:void(0)" class="vl-btn5"><span class="demo">Choose A Plan</span><span
-                                class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+                    <div class="btn-area1 text-center">
+                        <a class="vl-btn5" href="https://wa.me/554291231900?" target="_blank" rel="noopener noreferer">
+                            <span class="demo">Contratar</span>
+                            <span class="arrow"><i class="fa-solid fa-arrow-up"></i></span>
+                        </a>
                     </div>
                 </div>
             </div>
+            }
+
+            }
         </div>
+
     </div>
 </div>

@@ -13,6 +13,7 @@ import { filter, map, mergeMap } from 'rxjs';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit{
+    
     private titleService = inject(Title)
     private router = inject(Router)
     private activatedRoute = inject(ActivatedRoute)

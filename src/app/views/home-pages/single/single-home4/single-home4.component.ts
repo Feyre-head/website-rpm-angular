@@ -1,5 +1,5 @@
 import { ScrollService } from '@/core/services/scroll.service';
-import {ScrollSpyDirective} from '../../../../directives/scroll-spy.directive';
+import { ScrollSpyDirective } from '../../../../directives/scroll-spy.directive';
 import { Component, inject  } from '@angular/core';
 import { Home4HeroComponent } from "./components/home4-hero/home4-hero.component";
 import { Home4AboutComponent } from "./components/home4-about/home4-about.component";
@@ -12,6 +12,7 @@ import { Home4SuporteComponent } from "./components/home4-suporte/home4-suporte.
 import { Home4CtaComponent } from "./components/home4-cta/home4-cta.component";
 import { FooterComponent } from "@app/components/footer/footer.component";
 import { SingleHeader4Component } from "./components/single-header4/single-header4.component";
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-single-home4',

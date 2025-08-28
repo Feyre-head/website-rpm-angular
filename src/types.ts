@@ -47,15 +47,7 @@ export type BlogType = {
     link?: string;
 }
 
-export type PlanosType = {
-    name: string;
-    monthlyPrice: number;
-    yearlyPrice: number;
-    features: string[];
-    isPopular?:boolean;
-}
-
 export type FaqType = {
-  question: string;
-  answer: string;
+    question: string;
+    answer: string;
 }
