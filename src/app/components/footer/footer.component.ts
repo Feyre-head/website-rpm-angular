@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-// import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 export type FooterItem = {
     label: string;
@@ -15,7 +15,7 @@ export type FooterSection = {
 
 @Component({
     selector: 'app-footer',
-    imports: [CommonModule,],
+    imports: [CommonModule, RouterLink, RouterLinkActive],
     templateUrl: './footer.component.html',
     styles: ``
 })
@@ -31,26 +31,25 @@ export class FooterComponent {
         {
             title: 'Links Rápidos',
             items: [
-                { label: 'Home', link: '/' },
-                { label: 'Planos', link: '/services' },                
-                { label: 'Contato' },
-                { label: 'Onde Estamos', link: '/blogs/one' }                
+                { label: 'Home', link: '#inicio' },
+                { label: 'Planos', link: '#planos' },
+                { label: 'Contato', link: '#contato' },
+                { label: 'Onde Estamos', link: '#cobertura' }
             ],
         },
         {
             title: 'Serviços',
-            items: [                    
-                { label: 'Central De Comunicação' },
-                { label: 'Central Do Assinante' },
-                { label: 'Teste de Velocidade' }  
-                             
+            items: [
+                { label: 'Central De Comunicação', link: 'https://www.rpmtelecom.com.br/links.html' },
+                { label: 'Central Do Assinante', link: 'https://www.rpmtelecom.com.br/ca/#/login' },
+                { label: 'Teste de Velocidade', link: 'https://www.speedtest.net/pt' },
             ],
         },
         {
             title: 'Documentos',
             items: [
-                { label: 'Contrato' },                 
-                  
+                { label: 'Contrato', link: 'assets/files/contratoRpm.pdf', icon: 'assets/img/icons/doc.svg' },
+
                 // { label: '42 9123-1900', link: 'https://wa.me/554291231900', icon: 'assets/img/icons/phn1.svg' },
                 // { label: '42 3638-1900', link: '', icon: 'assets/img/icons/phn1.svg' },
                 // { label: '0800 649 1900', link: '',  icon: 'assets/img/icons/phn1.svg'  },
@@ -59,5 +58,19 @@ export class FooterComponent {
             ],
         },
     ];
+
+    isExternal(link?: string): boolean {
+        return !!link && /^(https?:\/\/|mailto:|tel:|\/\/)/i.test(link);
+    }
+
+    /** Trata arquivos como externos (href), ex.: .pdf, .docx, .zip etc. */
+    isFile(link?: string): boolean {
+        return !!link && /\.(pdf|docx?|xlsx?|csv|zip|rar|png|jpe?g|svg|webp)$/i.test(link);
+    }
+
+    isAnchor(link?: string): boolean {
+        return !!link && link.startsWith('#');
+    }
+
 
 }
