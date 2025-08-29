@@ -19,4 +19,13 @@ export class SingleMobileMenuComponent {
     toggleMobileMenu() {
         this.isMobileMenuOpen = !this.isMobileMenuOpen
     }
+
+    slugify(text: string): string {
+        return text
+        .toLowerCase()
+        .normalize('NFD')                // separa acentos
+		.replace(/[\u0300-\u036f]/g, '') // remove acentos
+		.replace(/\s+/g, '-')            // espaços -> '-'
+		.replace(/[^a-z0-9-]/g, '');     // limpa extras
+    }
 }

@@ -14,29 +14,33 @@
             <div class="vl-offcanvas-menu d-lg-none mb-40">
                 <nav>
                     <ul class="nav-pills">
-                        <li *ngFor="let item of menuItems" (click)="scroll.scrollTo(item)" class="nav-item"><a
+                        <li *ngFor="let item of menuItems" (click)="scroll.scrollTo(slugify(item))" class="nav-item"><a
                                 href="javascript:void(0)" class="nav-link">{{item}}</a></li>
+
+
                     </ul>
                 </nav>
             </div>
 
             <div class="space20"></div>
             <div class="vl-offcanvas-info">
-                <h3 class="vl-offcanvas-sm-title">Contact Us</h3>
-                <div class="space20"></div>
-                <span><a href="javascript:void(0)"> <i class="fa-regular fa-envelope"></i> +57 9954 6476</a></span>
-                <span><a href="javascript:void(0)"><i class="fa-solid fa-phone"></i> hello&#64;exdos.com</a></span>
-                <span><a href="javascript:void(0)"><i class="fa-solid fa-location-dot"></i> Bhemeara,Kushtia</a></span>
+                <h3 class="vl-offcanvas-sm-title">Entre em Contato</h3>
+                <div class="space20"></div>       
+                <span><a href="javascript:void(0)"> <i class="fa-solid fa-phone"></i>(42) 3638-1900</a></span>
+                <span><a href="javascript:void(0)"><i class="fa-regular fa-envelope"></i> contato&#64;rpmtelecom.com.br</a></span>
+                <span><a href="javascript:void(0)"><i class="fa-solid fa-location-dot"></i> Candói, Cantagalo, Goioxim e Foz do Jordão.</a></span>
             </div>
             <div class="space20"></div>
             <div class="vl-offcanvas-social">
-                <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
+                <h3 class="vl-offcanvas-sm-title">Nós Siga</h3>
                 <div class="space20"></div>
                 <div class="d-flex align-items-center gap-1 flex-wrap">
-                    <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-                    <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
-                    <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/rpmprovedor" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/554291231900" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/rpmtelecom/" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-instagram"></i></a>
                 </div>
             </div>
 
